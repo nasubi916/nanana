@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/main.js" defer>
+
+    </script>
+</head>
+
+<body>
+    <h1>逆算アプリー</h1>
+    <h2>余裕〇分</h2>
+    <button ontouchstart="touchCounter()">カウンターじゃね？</button>
+    <a id = "counterView"></a>
+    <br>
+    <button ontouchstart="timeWatch()">現在時刻を確認をしてくれないと困るボタン</button>
+    <br>
+    <button ontouchstart="timeDiff()">設定時刻との差を確認</button>
+    <br>
+    <br>
+    <input type="time" value="00:00" id="setTime"> 何時に寝るんだよ？
+    <br>
+    <input type="time" value="00:00" id="toDoTime">どれくらいかかるんだ？
+    <div class="form">
+        <input type="text" id="name">
+        <button onclick="addToDo()">追加</button>
+    </div>
+    <ul id="ToDoList">
+    </ul>
+</body>
+
+</html>
