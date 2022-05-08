@@ -1,3 +1,3 @@
-#readme(helpme).txt
+#readme
 なにこれ？
 全然わからんのだけど
