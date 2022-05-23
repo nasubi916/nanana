@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="components/loader.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="./js/main.js" defer>
-
     </script>
 </head>
 
@@ -21,13 +20,15 @@
     <a id = "counterView"></a>
     <br>
     <button ontouchstart="timeWatch()">現在時刻を確認をしてくれないと困るボタン</button>
+    <a id="show_timeWatch"></a>
     <br>
     <button ontouchstart="timeDiff()">設定時刻との差を確認</button>
+    <a id="show_timeDiff"></a>
     <br>
     <br>
     <input type="time" value="00:00" id="setTime"> 何時に寝るんだよ？
     <br>
-    <form method="POST" name="form1"></form>
+    <form name="form1"></form>
         <input type="time" value="00:00" id="toDoTime">どれくらいかかるんだ？
         <br>
         <input type="text" id="name">

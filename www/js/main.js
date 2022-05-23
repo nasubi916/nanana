@@ -4,39 +4,34 @@ renderToDoList();
 //意味のないカウンター
 let counter = 0;
 function touchCounter() {
+    console.log("a");
     counter = counter + 1;
     document.getElementById("counterView").innerHTML = counter + "回押してるね";
 }
 
 
 //現在時刻を確認
+let date = new Date();
 function timeWatch() {
-    let date = new Date();
     let hours = date.getHours();
     let minutes = date.getMinutes();
-    // console.log(nowTime)
     let nowTime = (hours + minutes);
-    console.log(hours,minutes)
+    document.getElementById("show_timeWatch");
 }
 
 //設定時刻との差を確認
 function timeDiff() {
     let setTime = document.getElementById("setTime").value;
-    console.log(setTime);
-
-    let aaa = setTime.split(":");
-    console.log(aaa);
+    
 }
 
 //enterキーで追加する
 let btn = document.getElementById("exe_button");
-
 window.document.onkeydown = function(event){
     if (event.key === 'Enter') {
         document.form1.submit();
     }
 }
-
 
 // フォームの情報を元にToDoを保存
 function addToDo() {
