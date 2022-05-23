@@ -28,6 +28,16 @@ function timeDiff() {
     console.log(aaa);
 }
 
+//enterキーで追加する
+let btn = document.getElementById("exe_button");
+
+window.document.onkeydown = function(event){
+    if (event.key === 'Enter') {
+        document.form1.submit();
+    }
+}
+
+
 // フォームの情報を元にToDoを保存
 function addToDo() {
     let input = document.getElementById("name").value;
